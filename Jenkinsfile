@@ -1,5 +1,5 @@
 pipeline {
-    agent { docker 'snelis/tox' }
+    agent { docker 'themattrix/tox' }
     stages {
         stage("Build") {
             steps {
