@@ -1,5 +1,6 @@
 pipeline {
     agent { docker 'themattrix/tox' }
+    environment { HOME = pwd() }
     stages {
         stage("Build") {
             steps {
