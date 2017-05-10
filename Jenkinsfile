@@ -4,10 +4,10 @@ pipeline {
         stage("Build") {
             steps {
                 dir('allure-pytest') {
-                    sh 'tox'
+                    sh 'pwd'
                 }
                 dir('allure-python-commons') {
-                    sh 'tox'
+                    sh 'pwd'
                 }
             }
         }
