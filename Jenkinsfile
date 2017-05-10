@@ -3,8 +3,8 @@ pipeline {
     stages {
         stage("Build") {
             steps {
-                sh 'tox -c allure-pytest'
-                sh 'tox -c allure-python-commons'
+                sh 'tox -c allure-pytest/tox.ini'
+                sh 'tox -c allure-python-commons/tox.ini'
             }
         }
     }
